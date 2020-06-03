@@ -1,0 +1,22 @@
+<div class="tarjeta">
+  <p class="titulo">{{climaFiltradoRecibido.Ciudad}}</p>
+  <img [src]=" climaFiltradoRecibido.Imagen | contruirImagen" />
+
+  <div class="climaActual">
+    <p>{{climaFiltradoRecibido.temperaturaActual | kelvinCelsius}}</p>
+    <p>{{climaFiltradoRecibido.ClimaActual}}</p>
+  </div>
+  <div class="temperaturasesperadas">
+    <div class="temperaturaminima">
+      <p>{{climaFiltradoRecibido.temperaturaMinima | kelvinCelsius}}</p>
+      <p class="textotemperatura">Min</p>
+    </div>
+    <div class="temperaturamaxima">
+      <p>{{climaFiltradoRecibido.temperaturaMaxima | kelvinCelsius}}</p>
+      <p class="textotemperatura">Max</p>
+    </div>
+  </div>
+  <button (click)="AgregarCiudad()">
+    Agregar Ciudad
+  </button>
+</div>

@@ -1,0 +1,21 @@
+<div class="contenedor">
+    <ng-container *ngIf="!loading">
+        <app-cards-weather [ngStyle]="{'width.%': 25}"
+        [climaFiltradoRecibido]="clima" 
+        *ngFor="let clima of ArrayClimaFiltrado">
+    </app-cards-weather>
+    </ng-container>
+
+
+    <div class="tarjeta" (click)="IrAgregar()">
+
+        <p>Agregar ciudad</p>
+
+        <div class="circuloGris">
+            +
+        </div>
+
+
+        <img src="../../../assets/img/ciudad.PNG" alt="">
+    </div>
+</div>

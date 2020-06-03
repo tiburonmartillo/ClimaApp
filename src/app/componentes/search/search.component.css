@@ -1,0 +1,84 @@
+.contenedor{
+    width: 100%;
+    height: 100vh;
+background: linear-gradient(0deg,rgba(97,166,251,1)0%,
+rgba(95,220,228,1)100%);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.contenedorBusqueda{
+    width: 70%;
+    height: 95vh;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.backarrow{
+    width: 5vw;
+    height: 5vw;
+    background: rgba(255, 255, 255, 0.651);
+    margin: 2vh;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  
+}
+
+.backarrow img{
+    width: 50%;
+}
+
+h2{
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-top: 8vh;
+}
+
+.inputBuscador{
+    width: 100%;
+    height: 6vh;
+    margin-top: 8vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.inputBuscador > input{
+    width: 40%;
+    height: 70px;
+    float: left;
+    border: 0px;
+    border-radius: 0px;
+   font-size: 30px;
+   border-bottom: 2px solid rgb(207, 207, 207);
+}
+
+.inputBuscador > span{
+    display: block;
+    border-radius: 50%;
+    float: left;
+    width: 80px;
+    height: 80px;
+    left: 50%;
+    background:#31feae;
+    z-index: 3;
+    transform: translate(-50%,-5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputBuscador > span > img{
+    width: 40%;
+}
+.contenedorBusqueda >.texto{
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+}
